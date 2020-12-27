@@ -1,0 +1,25 @@
+{
+  "name": "ping-sensor",
+  "version": "1.0.0",
+  "description": "A ping sensor to send its state to MQTT",
+  "main": "dist/index.js",
+  "author": "Sylvain VISTE",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "tsnd --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node ."
+  },
+  "dependencies": {
+    "@lolpants/pingman": "^1.0.6",
+    "async-mqtt": "^2.6.1",
+    "debug": "^4.3.1",
+    "env-var": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.16",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  }
+}
